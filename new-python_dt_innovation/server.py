@@ -1,0 +1,1 @@
+import osfrom app.src.main import appif __name__ == "__main__":    config_name = os.environ.get('FLASK_CONFIG')    app.run(host='0.0.0.0', port=7005, debug=True)

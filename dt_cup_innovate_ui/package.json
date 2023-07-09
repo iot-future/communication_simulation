@@ -1,0 +1,49 @@
+{
+    "name": "dt_cup_innovate_ui",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build"
+    },
+    "dependencies": {
+        "@element-plus/icons": "^0.0.11",
+        "@element-plus/icons-vue": "^2.0.10",
+        "ali-oss": "^6.17.1",
+        "axios": "^0.27.2",
+        "console": "^0.7.2",
+        "core-js": "^3.6.5",
+        "echarts": "^5.4.2",
+        "echarts-gl": "^2.0.9",
+        "element-plus": "^2.2.28",
+        "qs": "^6.11.0",
+        "video.js": "^8.3.0",
+        "videojs-flash": "^2.2.1",
+        "vue": "^3.0.0",
+        "vue-router": "^4.0.0-0",
+        "vue-video-player": "^6.0.0",
+        "vuex": "^4.0.0-0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.5.13",
+        "@vue/cli-plugin-router": "~4.5.13",
+        "@vue/cli-plugin-vuex": "~4.5.13",
+        "@vue/cli-service": "~4.5.13",
+        "@vue/compiler-sfc": "^3.0.0",
+        "node-sass": "^4.12.0",
+        "sass-loader": "^8.0.2"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ],
+    "main": "babel.config.js",
+    "repository": {
+        "type": "git",
+        "url": "git@codeup.aliyun.com:61c91bbe03ecfc3a1a2524c1/dt_cup_ui.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

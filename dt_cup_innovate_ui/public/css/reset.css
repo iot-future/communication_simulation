@@ -1,0 +1,40 @@
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button,span,table,tr {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+html,body {
+    height: 100%;
+}
+html{
+    position: relative;
+    min-width:1210px;
+    /* min-width: 1000px; */
+    background-color: #e5e5e5c0;
+    /* min-height: 800px; */
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
+}
+#app{
+    height: 100%;
+    font-size: .14rem;
+}
+/* @media (max-width: 1000px) {
+    body{
+        background-color: #000;
+        font-size: 100px;
+    }
+} */
+.el-message{
+	font-size: 32px;
+}
+a{
+   text-decoration: none;
+   color: #333;
+ }
+
+ body.el-popup-parent--hidden {
+    padding-right: 0px !important;
+    overflow: hidden;  
+    width: calc(100% - 0px) !important;
+  }
