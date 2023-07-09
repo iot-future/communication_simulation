@@ -7,6 +7,7 @@
         "build": "vue-cli-service build"
     },
     "dependencies": {
+        "@cloudgeek/vue3-video-player": "^0.3.10",
         "@element-plus/icons": "^0.0.11",
         "@element-plus/icons-vue": "^2.0.10",
         "ali-oss": "^6.17.1",
@@ -30,6 +31,7 @@
         "@vue/cli-plugin-vuex": "~4.5.13",
         "@vue/cli-service": "~4.5.13",
         "@vue/compiler-sfc": "^3.0.0",
+        "hls.js": "^1.4.8",
         "node-sass": "^4.12.0",
         "sass-loader": "^8.0.2"
     },

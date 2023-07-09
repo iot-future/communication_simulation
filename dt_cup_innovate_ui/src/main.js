@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store' // 引入vuex
@@ -24,11 +24,11 @@ app.config.warnHandler = () => null // 去除控制台警告信息
 // }
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
     createApp(App).component(key, component)
-  }
-  //配置中文显示
-  createApp(App).use(ElementPlus, {
+}
+//配置中文显示
+createApp(App).use(ElementPlus, {
     locale: zhCn,
-  })
+})
 
 createApp(App).use(router).use(ElmentPlus).use(store).mount('#app')
 

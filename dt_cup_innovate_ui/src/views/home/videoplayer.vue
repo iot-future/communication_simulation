@@ -1,33 +1,27 @@
 <template>
-  <div>
-    <video ref="player" :src="videoUrl"  controls></video>
+  <div style="display: flex; align-items: center; justify-content: center; width: 100%">
+    <video ref="videoPlayer" controls autoPlay></video>
   </div>
 </template>
 
 <script>
-import VueVideoPlayer from 'vue-video-player';
-import 'video.js/dist/video-js.css'; // 引入video.js样式文件
-// import 'vue-video-player/src/custom-theme.css'; // 引入vue-video-player样式文件
+import Hls from 'hls.js';
 
 export default {
-  name: 'videoplayer',
-  components: {
-    VueVideoPlayer
-  },
-  data() {
-    return {
-      videoUrl: 'rtmp://mobliestream.c3tv.com:554/live/goodtv.sdp', // 替换为您的rtmp视频流URL
-      // posterUrl: 'your-poster-url' // 可选，替换为您的视频封面图URL
-    };
-  },
   mounted() {
-    this.$refs.player.addEventListener('loadedmetadata', this.onPlayerMetadataLoaded);
-  },
-  methods: {
-    onPlayerMetadataLoaded() {
-      this.$nextTick(() => {
-        // 组件加载完成后，自动播放视频
-        this.$refs.player.play();
+    const video = this.$refs.videoPlayer;
+
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource('http://101.42.138.225:1999/live/abcn.m3u8');
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        video.play();
+      });
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = 'http://101.42.138.225:1999/live/abcn.m3u8';
+      video.addEventListener('loadedmetadata', () => {
+        video.play();
       });
     }
   }
@@ -35,5 +29,18 @@ export default {
 </script>
 
 <style>
-/* 可自定义组件样式 */
+/*div {*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+
+video {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
 </style>
