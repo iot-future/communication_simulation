@@ -13,13 +13,13 @@ export default {
 
     if (Hls.isSupported()) {
       const hls = new Hls();
-      hls.loadSource('http://101.42.138.225:1999/live/abcn.m3u8');
+      hls.loadSource('http://43.138.103.251:1999/live/abca.m3u8');
       hls.attachMedia(video);
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         video.play();
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = 'http://101.42.138.225:1999/live/abcn.m3u8';
+      video.src = 'http://43.138.103.251:1999/live/abca.m3u8';
       video.addEventListener('loadedmetadata', () => {
         video.play();
       });
@@ -29,14 +29,6 @@ export default {
 </script>
 
 <style>
-/*div {*/
-/*  width: 100%;*/
-/*  height: 100%;*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*}*/
-
 video {
   width: 100%;
   height: auto;

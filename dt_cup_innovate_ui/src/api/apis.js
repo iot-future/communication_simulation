@@ -91,4 +91,7 @@ export const parameter = {
     picture_zaibo(params){
         return post('api/picture/zaibo', params);
     },
+    warnwindow(params) {
+        return post('api/warning', params);
+    }
 }

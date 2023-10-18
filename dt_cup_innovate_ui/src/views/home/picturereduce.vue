@@ -1,7 +1,6 @@
 <template>
     <div style="width: 100%;height: 400px;">
-        <div id="mychart5" style=" width: 1300px; height:400px;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)"></div>
-        <!-- <div id="mychart6" style=" width: 1300px; height:400px;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)"></div> -->
+        <div id="mychart5" style=" width: 1100px; height:400px;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)"></div>
     </div>
 </template>
   

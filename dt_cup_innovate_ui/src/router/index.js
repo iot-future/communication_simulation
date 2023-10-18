@@ -26,9 +26,9 @@ const routes = [
     component: () => import('../views/home/hardwareExploit.vue')
   },
   {
-    path: '/videoplayer',//视频开发页面
-    name: 'videoplayer',
-    component: () => import('../views/home/videoplayer.vue')
+    path: '/videoplay',//视频开发页面
+    name: 'videoplay',
+    component: () => import('../views/home/videoplay.vue')
   },
 
 ]

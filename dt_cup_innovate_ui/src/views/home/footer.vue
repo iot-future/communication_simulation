@@ -7,7 +7,6 @@
     </span>
 
     <span class="f-main">
-      版权所有: 中信科移动通信技术股份有限公司-培训中心
     </span>
   </div>
 </template>

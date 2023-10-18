@@ -15,16 +15,6 @@
         <img class="start_1" @click="debugging" @mouseover="startover" @mouseleave="startleave" :src="start" alt="" />
       </div>
     </div>
-    <!-- 中信科logo -->
-    <img class="logo" @click="logo" src="./img/logo_1.png" alt="">
-    <!-- 小唐人弹出框 -->
-    <div class="logoBox" v-show="dialogVisible">
-      <span>
-        请根据设计来确定所需的创新应用场景，通过点击该场景对应的图标进行选择，点击“开始调试”按钮，进入后续的通信设备配置部署和指标呈现等设计页面。
-      </span>
-      <div class="logoAngle"></div>
-    </div>
-    <!-- 尾部 -->
     <Footer/>
   </div>
 </template>

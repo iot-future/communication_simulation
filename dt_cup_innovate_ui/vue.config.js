@@ -28,9 +28,7 @@ module.exports = {
 		// 代理
 		proxy: {
 		  '/api': {
-		    // target: 'http://192.168.1.105:7005',  // ⽬标地址http://127.0.0.1:5000/
-			// target: 'http://47.110.248.80:7005',  // ⽬标地址http://127.0.0.1:5000/
-			target: 'http://172.24.104.84:7005/',
+			target: 'http://172.24.230.24:7005/',
 		    // secure: true,  // https 的时候 使用该参数
 		    changeOrigin: true,  // 是否跨域
 		    pathRewrite: {

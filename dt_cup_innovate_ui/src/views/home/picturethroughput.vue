@@ -16,7 +16,7 @@
 import * as echarts from "echarts";
 import 'echarts-gl';
 import { parameter } from "../../api/apis.js";
-import { bottom } from "@popperjs/core";
+// import { bottom } from "@popperjs/core";
 export default {
   data() {
     return {
@@ -53,8 +53,8 @@ export default {
           }
         },
         grid: {
-          left: '20%',
-          right: '30%',
+          left: '10%',
+          right: '40%',
           bottom: '5%'
         },
         toolbox: {

@@ -93,15 +93,6 @@
 				</el-button>
 			</div>
 		</el-dialog>
-		<!-- 中信科logo -->
-			<img class="logo" @click="logo" src="./img/logo_2.png" alt="">
-		<!-- 小唐人弹出框开始 -->
-		<div class="logoBox" v-show="dialog_show">
-			<span>
-				针对选中的创新应用场景，在界面左侧，根据设计需要，进行相应基站和终端类型的选择，通过拖拽到界面中间的地图，进行创新应用的部署。在界面右侧的4个功能键，可以一次点击相应的功能按键，分别对基站配置、终端配置、硬件开发配置、指标呈现进行进一步设计开发和功能配置实现。
-			</span>
-			<div class="logoAngle"></div>
-      </div>
 	</div>
 </template>
   
