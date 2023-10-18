@@ -1,0 +1,344 @@
+.content {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: .18rem;
+}
+
+.minBg {
+    height: 8.3rem;
+    // 底图
+    .map {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.img_exit {
+    position: absolute;
+    top: .7rem;
+    right: 0;
+    width: 1.3rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    background-image: url('./img/exit.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    opacity: .9;
+}
+
+.exit_icon {
+    position: absolute;
+    top: .08rem;
+    right: 0.68rem;
+    width: .22rem;
+    height: .22rem;
+    display: inline-block;
+}
+
+.exit_text {
+    color: #fff;
+    margin-left: 0.7rem;
+    font-size: .16rem;
+}
+
+.Tabs {
+    position: absolute;
+    top: .7rem;
+    left: .2rem;
+}
+
+.edge {
+    position: absolute;
+    top: .7rem;
+    left: 0;
+    height: 8.3rem;
+    width: .2rem;
+    background: #302172ad;
+
+}
+
+.Tabs :deep .el-tabs__item {
+    width: 1rem;
+    text-align: center;
+}
+
+.Tabs :deep .el-tabs--left .el-tabs__header.is-left {
+    margin-right: 0;
+}
+
+.element_Box {
+    margin: 0.1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.element {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FFFCFF;
+    border-radius: .1rem;
+    background: #fffcffd6;
+}
+
+.element_img {
+    margin: .1rem auto;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    width: .8rem;
+    height: .8rem;
+    cursor: pointer;
+}
+
+.station_one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // width: .3rem;
+    height: .8rem;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.model-name {
+    color: #fff;
+    font-size: .14rem;
+    text-align: center;
+
+}
+
+
+
+/* 滚动条样式 */
+:deep .el-tabs::-webkit-scrollbar {
+    height: 6px;
+    width: 4px;
+}
+
+:deep .el-tabs::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #667bb4;
+}
+
+:deep .el-tabs::-webkit-scrollbar-track {
+    background: skyblue;
+}
+
+.configuration {
+    position: absolute;
+    right: 0.2rem;
+    top: 1.3rem;
+    width: 1.8rem;
+    height: .6rem;
+    color: #fff;
+    font-size: .16rem;
+    text-align: center;
+    line-height: .6rem;
+    cursor: pointer;
+}
+
+#label_1 {
+    background: url(./img/label_1.png) no-repeat;
+    background-size: 1.8rem 0.6rem;
+    background-repeat: no-repeat;
+}
+
+#label_3 {
+    background: url(./img/label_3.png) no-repeat;
+    background-size: 1.8rem 0.6rem;
+    background-repeat: no-repeat;
+}
+
+#label_4 {
+    background: url(./img/label_4.png) no-repeat;
+    background-size: 1.8rem 0.6rem;
+    background-repeat: no-repeat;
+}
+
+#label_5 {
+    background: url(./img/label_5.png) no-repeat;
+    background-size: 1.8rem 0.6rem;
+    background-repeat: no-repeat;
+}
+
+#tabs :deep.el-tabs__header {
+    margin: 0 0 10px;
+}
+
+#tabs :deep .el-tabs--top .el-tabs__item.is-top:last-child {
+    background: url(./img/label_2.png) no-repeat;
+    background-size: 1rem .4rem;
+    background-repeat: no-repeat;
+}
+
+#tabs :deep .el-tabs--top .el-tabs__item.is-top:nth-child(2) {
+    background: url(./img/label_2.png) no-repeat;
+    background-size: 1rem .4rem;
+    background-repeat: no-repeat;
+}
+
+#tabs :deep .el-tabs__item.is-active {
+    background: url(./img/label_1.png) no-repeat !important;
+    background-size: 1rem .4rem !important;
+}
+
+// 弹出框样式
+.drag_box {
+    position: absolute;
+    top: 4.8rem;
+    left: 10rem;
+    transform: translate(-50%, -50%);
+    border: .04rem solid #76C5F0;
+    padding: .1rem;
+
+    .header {
+        width: 13.62rem;
+        height: .6rem;
+        background-color: #1375BC;
+    }
+
+    .header_title {
+        color: #fff;
+        line-height: .6rem;
+        margin-left: .4rem;
+        font-size: .2rem;
+    }
+
+    .Box_map {
+        width: 13.5rem;
+        height: 7rem;
+        border: .06rem solid #303062;
+    }
+}
+
+
+// 图标弹出框样式
+#pop_Box{
+    border: 10px solid;
+    border-image-source: url(./img/pop-up.png);
+    border-image-width: 35px;
+    border-image-slice: 70 fill;
+    opacity: .8;
+    background-color: unset;
+    box-shadow: none;
+    width: 4.4rem;
+    height: 3.1rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2rem;
+    margin-top: -2.5rem;
+    z-index: 9999;
+
+    .mars3d-popup-close-button {
+        position: absolute;
+        top: .3rem;
+        right: .15rem;
+        display: flex;
+        width: .2rem;
+        height: .2rem;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .mars3d-popup-close-button:hover {
+        color: orangered;
+    }
+
+    .map-popup-title {
+        position: absolute;
+        left: .56rem;
+    }
+
+    table {
+        text-align: left;
+    }
+
+    tr {
+        height: 0.25rem;
+    }
+
+    td {
+        width: 1.3rem;
+    }
+
+    .action-btn-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: .2rem;
+    }
+
+    .delete {
+        margin: 7px 0;
+        height: .3rem;
+        width: .7rem;
+        background-image: url(./img/btn-active.jpg);
+        background-size: 100% 100%;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        margin: auto;
+    }
+}
+
+.Tabs :deep .el-tabs__item.is-active {
+    background: url(./img/left_2.png) no-repeat !important;
+    background-size: 0.3rem 0.92rem !important;
+  }
+  :deep.el-tabs--left.el-tabs--card .el-tabs__nav {
+    border: none;
+  }
+  .Tabs :deep .el-tabs__item {
+    padding: 0;
+    color: #fff;
+  }
+  :deep .el-tabs__nav is-left {
+    border: none;
+  }
+  :deep .el-tabs__header is-left {
+    background: #76c4ef;
+  }
+  :deep .el-tabs--left.el-tabs--card .el-tabs__item.is-left {
+    height: 0.92rem;
+    width: 0.3rem;
+    background: url(./img/left_1.png) no-repeat;
+    background-size: 0.3rem 0.92rem;
+    background-repeat: no-repeat;
+    border: none;
+    font-size: 0.12rem;
+    writing-mode: tb-rl;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  :deep .el-tabs--left .el-tabs__nav-wrap.is-left.is-scrollable {
+    background: #4d4078;
+  }
+  :deep .el-tabs--left .el-tabs__header.is-left {
+    height: 8.3rem;
+    border: none;
+    background: #302172ad;
+  }
+  :deep .el-tabs--card > .el-tabs__header {
+    border-bottom: 1px solid var(--el-border-color-light);
+    height: var(--el-tabs-header-height);
+  }
+  :deep .el-tabs--left .el-tabs__nav.is-left {
+    width: 0.4rem;
+  }
+  body {
+    padding-right: 0 !important;
+    overflow: auto !important;
+  }
